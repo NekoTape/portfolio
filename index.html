@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Nekø Tape — Portfolio</title>
+  <meta name="description" content="Nekø Tape — art, music and games. Remixes, original music and Deltarune fan projects.">
+  <meta name="theme-color" content="#3b1d69">
+  <link rel="icon" type="image/png" href="images/icon_neko_tape.png">
+  <link rel="stylesheet" href="style.css">
+  <!-- Marca que hay JS activo (las animaciones de entrada dependen de esto) -->
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+
+<body>
+  <div class="wrap">
+    <!-- Header -->
+    <header class="site-header">
+      <a class="brand" href="#hero" aria-label="Go to top">
+        <div class="logo" aria-hidden="true">
+          <img src="images/icon_neko_tape.png" alt="Neko Tape Logo">
+        </div>
+        <div>
+          <div class="brand-name">Nekø Tape</div>
+          <div class="brand-tagline">Art • Music • Games</div>
+        </div>
+      </a>
+
+      <!-- Desktop nav -->
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#links">Links</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <!-- Mobile button -->
+      <button class="menu-toggle" type="button" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobile-nav">☰</button>
+
+      <!-- Mobile menu -->
+      <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#links">Links</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <!-- HERO -->
+      <section id="hero" class="hero reveal" aria-labelledby="hero-title">
+        <div class="hero-left">
+          <h1 id="hero-title">DELTARUNE CLASH</h1>
+          <p class="subtitle">New update: v1.4.0. Big rework, New characters, New stats, New items, New skins, New pass</p>
+          <div class="hero-actions">
+            <a class="btn" href="https://gamejolt.com/games/deltarune-clash/933774" target="_blank" rel="noopener">Play Now</a>
+            <a class="btn secondary" href="https://soundcloud.com/neko-tape/sets/deltarune-festival-chapter" target="_blank" rel="noopener">▶ Soundtrack</a>
+          </div>
+        </div>
+
+        <img class="hero-right" src="images/news.png" alt="News Image" fetchpriority="high">
+      </section>
+
+      <!-- ABOUT -->
+      <section id="about" class="about reveal" aria-labelledby="about-title">
+        <div class="about-left">
+          <h2 id="about-title">About</h2>
+          <p>
+            I create remixes inspired by videogames, anime, shows, along with my own original music. Beyond that, I love
+            working on videogames, experimenting with 3D animations, and teaming up with other artists to bring creative
+            projects to life.
+          </p>
+        </div>
+
+        <div class="about-right" aria-hidden="true">
+          <img src="images/logo_neko_tape_transparent.png" loading="lazy" decoding="async" alt="Nekø Tape Logo">
+        </div>
+      </section>
+
+      <!-- PROJECTS -->
+      <section id="projects" class="projects reveal" aria-labelledby="projects-title">
+        <h2 id="projects-title">Projects</h2>
+
+        <div class="projects-carousel" role="region" aria-roledescription="carousel" aria-label="Projects carousel">
+          <div class="carousel-viewport" id="carousel-viewport">
+            <div class="carousel-track" id="carousel-track" role="list">
+              <!-- Slide 1 -->
+              <article class="project-card" role="listitem" aria-labelledby="p1-title">
+                <img class="project-thumb" src="images/project_deltarune_remixes.png" loading="lazy" decoding="async" alt="Project: Deltarune Remixes">
+                <div>
+                  <div id="p1-title" class="project-title">Deltarune Remixes</div>
+                  <div class="project-desc">Covers of official and fanmade Deltarune themes.</div>
+                </div>
+                <div class="project-actions">
+                  <a class="btn" href="https://www.youtube.com/playlist?list=PLiaMWrTY-We6ZSt32H4K6-ZFeyyNwRp4g" target="_blank" rel="noopener" aria-label="Open Deltarune Remixes">YouTube</a>
+                </div>
+              </article>
+
+              <!-- Slide 2 -->
+              <article class="project-card" role="listitem" aria-labelledby="p2-title">
+                <img class="project-thumb" src="images/project_festival_chapter.png" loading="lazy" decoding="async" alt="Project: Festival Chapter">
+                <div>
+                  <div id="p2-title" class="project-title">Deltarune Festival Chapter</div>
+                  <div class="project-desc">Deltarune Chapter 6 take by Neko Tape, featuring Bernie.</div>
+                </div>
+                <div class="project-actions">
+                  <a class="btn" href="https://gamejolt.com/games/deltarune-festival-chapter/1011789" target="_blank" rel="noopener" aria-label="Open Festival Chapter">Play Demo</a>
+                </div>
+              </article>
+
+              <!-- Slide 3 -->
+              <article class="project-card" role="listitem" aria-labelledby="p3-title">
+                <img class="project-thumb" src="images/project_clash.png" loading="lazy" decoding="async" alt="Project: Clash">
+                <div>
+                  <div id="p3-title" class="project-title">Deltarune Clash</div>
+                  <div class="project-desc">Deltarune tower defense game.</div>
+                </div>
+                <div class="project-actions">
+                  <a class="btn" href="https://gamejolt.com/games/deltarune-clash/933774" target="_blank" rel="noopener" aria-label="Open Deltarune Clash">Play now</a>
+                </div>
+              </article>
+
+              <!-- Slide 4 -->
+              <article class="project-card" role="listitem" aria-labelledby="p4-title">
+                <img class="project-thumb" src="images/project_lights_action.png" loading="lazy" decoding="async" alt="Project: Lights and Action">
+                <div>
+                  <div id="p4-title" class="project-title">Deltarune Lights and Action</div>
+                  <div class="project-desc">Deltarune Chapter 3 take by Checherex, featuring Mirrette.</div>
+                </div>
+                <div class="project-actions">
+                  <a class="btn" href="https://www.youtube.com/playlist?list=PLNO0kRpOVfiE-BbYXgWabSP_sPFmFRg5x" target="_blank" rel="noopener" aria-label="Open Lights and Action">YouTube</a>
+                </div>
+              </article>
+
+              <!-- Slide 5 -->
+              <article class="project-card" role="listitem" aria-labelledby="p5-title">
+                <img class="project-thumb" src="images/project_albums.png" loading="lazy" decoding="async" alt="Project: Albums">
+                <div>
+                  <div id="p5-title" class="project-title">Albums</div>
+                  <div class="project-desc">My original music.</div>
+                </div>
+                <div class="project-actions">
+                  <a class="btn" href="https://www.youtube.com/playlist?list=PLiaMWrTY-We7zZqn2cVampWdr8ATaiHpL" target="_blank" rel="noopener" aria-label="Open Albums">Youtube</a>
+                </div>
+              </article>
+
+              <!-- Slide 6 -->
+              <article class="project-card" role="listitem" aria-labelledby="p6-title">
+                <img class="project-thumb" src="images/project_blocky.png" loading="lazy" decoding="async" alt="Project: Blocky">
+                <div>
+                  <div id="p6-title" class="project-title">Caramella Girls Blocky</div>
+                  <div class="project-desc">CG in blocky shape. 3D animations.</div>
+                </div>
+                <div class="project-actions">
+                  <a class="btn" href="https://www.youtube.com/channel/UCFvSZYutUyX2bvkW4MyBJ6A" target="_blank" rel="noopener" aria-label="Open CG Blocky">Youtube</a>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <div class="carousel-controls">
+            <button class="control-btn" type="button" id="btn-prev" aria-label="Previous project" title="Previous (←)">◀</button>
+            <button class="control-btn" type="button" id="btn-next" aria-label="Next project" title="Next (→)">▶</button>
+            <!-- Los puntos se generan desde script.js -->
+            <div class="carousel-dots" id="carousel-dots" role="tablist" aria-label="Project pages"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- LINKS -->
+      <section id="links" class="links reveal" aria-labelledby="links-title">
+        <h2 id="links-title">Links</h2>
+        <div class="links-grid">
+          <a class="social-btn" href="https://www.youtube.com/c/NekoTape" target="_blank" rel="noopener" aria-label="YouTube — Nekø Tape">
+            <img class="social-icon" src="images/icon_youtube.png" loading="lazy" alt="Youtube Icon">
+            <div class="social-name">YouTube</div>
+          </a>
+
+          <a class="social-btn" href="https://soundcloud.com/neko-tape" target="_blank" rel="noopener" aria-label="SoundCloud — Nekø Tape">
+            <img class="social-icon" src="images/icon_soundcloud.png" loading="lazy" alt="SoundCloud Icon">
+            <div class="social-name">SoundCloud</div>
+          </a>
+
+          <a class="social-btn" href="https://twitter.com/NekoTape912" target="_blank" rel="noopener" aria-label="Twitter — Nekø Tape">
+            <img class="social-icon" src="images/icon_twitter.png" loading="lazy" alt="Twitter Icon">
+            <div class="social-name">Twitter</div>
+          </a>
+
+          <a class="social-btn" href="https://linktr.ee/nekotape" target="_blank" rel="noopener" aria-label="Linktree — Nekø Tape">
+            <img class="social-icon" src="images/icon_linktree.png" loading="lazy" alt="Linktree Icon">
+            <div class="social-name">Linktree</div>
+          </a>
+
+          <a class="social-btn" href="https://neko-tape.myspreadshop.com/" target="_blank" rel="noopener" aria-label="Merch — Spreadshirt">
+            <img class="social-icon" src="images/icon_merch.png" loading="lazy" alt="Merch Icon">
+            <div class="social-name">Merch</div>
+          </a>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section id="contact" class="contact reveal" aria-labelledby="contact-title">
+        <div>
+          <h2 id="contact-title" class="contact-title">Contact</h2>
+          <p>
+            If you want to contact me, send fan-art, or request a remix, you can reach me at:
+          </p>
+        </div>
+        <div class="contact-card">
+          <div class="contact-icon" aria-hidden="true">✉</div>
+          <a href="mailto:nekotape.files@gmail.com" class="contact-email">
+            nekotape.files@gmail.com
+          </a>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer id="footer">
+      © Nekø Tape 2026
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
