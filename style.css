@@ -42,7 +42,7 @@
   --yellow: #FFD23F;
 
   /* ---------- Fondo general (más claro y violeta que antes) ---------- */
-  --bg: #270a53;
+  --bg: #3e1280;
 
   /* ---------- Carrusel de proyectos: gradiente detrás de las tarjetas ---------- */
   --carousel-gradient: linear-gradient(135deg, #5906a1 0%, var(--pink) 60%, var(--orange) 100%);
@@ -108,10 +108,10 @@ body::before {
   z-index: -1;
   pointer-events: none;
   background:
-    radial-gradient(circle at 12% 18%, rgba(255, 0, 134, 0.38), transparent 38%),
-    radial-gradient(circle at 88% 28%, rgba(243, 157, 66, 0.30), transparent 36%),
-    radial-gradient(circle at 55% 92%, rgba(255, 210, 63, 0.20), transparent 38%),
-    radial-gradient(circle at 20% 80%, rgba(123, 44, 191, 0.45), transparent 40%);
+    radial-gradient(circle at 12% 18%, rgba(255, 0, 136, 0.652), transparent 38%),
+    radial-gradient(circle at 88% 28%, rgba(243, 158, 66, 0.536), transparent 36%),
+    radial-gradient(circle at 55% 92%, rgba(255, 210, 63, 0.375), transparent 38%),
+    radial-gradient(circle at 20% 80%, rgba(122, 44, 191, 0.511), transparent 40%);
   animation: glow-drift 24s ease-in-out infinite alternate;
   will-change: transform;
 }
@@ -346,13 +346,12 @@ section {
   padding: 10px 16px;
   border: 0;
   border-radius: 12px;
-  background: linear-gradient(90deg, var(--pink), var(--orange));
-  color: #fff;
+  background: #fff; 
+  color: var(--pink);
   font: inherit;
   font-weight: 700;
   text-align: center;
   text-decoration: none;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
   box-shadow: 0 6px 16px rgba(255, 0, 134, 0.28);
   cursor: pointer;
   transition: transform 0.25s var(--ease), box-shadow 0.25s, filter 0.25s, background 0.25s;
@@ -362,6 +361,8 @@ section {
   transform: translateY(-2px);
   box-shadow: 0 10px 22px rgba(255, 0, 134, 0.42);
   filter: brightness(1.08) saturate(1.1);
+  background: linear-gradient(90deg, var(--pink), var(--orange));
+  color: #fff;
 }
 
 .btn:active {
@@ -445,13 +446,13 @@ section {
   width: auto;
   padding: 12px 22px;
   background: #fff;
-  color: var(--bg);
+  color: var(--pink);
   text-shadow: none;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
 .hero .btn:hover {
-  background: var(--bg);
+  background: linear-gradient(90deg, var(--pink), var(--orange));
   color: #fff;
   filter: none;
 }
@@ -750,7 +751,7 @@ section {
   }
 
   .social-btn:hover .social-icon {
-    transform: rotate(-8deg) scale(1.12);
+    transform: scale(1.12);
   }
 
   .social-btn:hover .social-name {
